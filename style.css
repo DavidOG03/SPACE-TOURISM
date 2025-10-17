@@ -25,44 +25,39 @@ body {
 
 .hero {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: url(images/home/background-home-mobile.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* overflow: scroll; */
 }
 
 .hero2 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  padding: 0;
   background: url(images/destination/background-destination-mobile.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: scroll;
 }
 
 .hero3 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: url(images/crew/background-crew-mobile.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: scroll;
   z-index: -100;
 }
 
 .hero4 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: url(images/technology/background-technology-mobile.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: scroll;
   z-index: -100;
 }
 
@@ -185,9 +180,9 @@ header .ham {
 main {
   display: flex;
   flex-direction: column;
+  gap: 4rem;
   justify-content: space-between;
   align-items: center;
-  height: 80%;
 }
 
 main .text {
@@ -252,7 +247,6 @@ main .explore:hover {
   padding: 0;
   display: block;
   text-align: center;
-  /* margin: 0 auto 0 auto; */
   z-index: 50;
 }
 
@@ -311,7 +305,6 @@ main .explore:hover {
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
-    /* z-index: 1; */
   }
 }
 
@@ -471,7 +464,7 @@ main .explore:hover {
 
 .mobile_crew_main {
   margin: 0;
-  padding: 0 24px;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -486,7 +479,6 @@ main .explore:hover {
   color: var(--white);
   font-size: 18px;
   font-weight: 400;
-  padding-top: 50px;
   letter-spacing: 2.7px;
 }
 
@@ -507,7 +499,7 @@ main .explore:hover {
 
 .mobile_crew_main .crew-image img {
   height: 222px;
-  animation: swipe2 0.6s linear 1;
+  /* animation: swipe2 0.6s linear 1; */
 }
 
 .mobile_crew_main [data-tab-image] {
@@ -728,48 +720,43 @@ main .explore:hover {
 
 /* tablet media query */
 
-@media screen and (min-width: 601px) and (max-width: 786px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .hero {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url(images/home/background-home-tablet.jpg);
     background-position: 50% 90%;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
     min-height: 1024px;
   }
 
   .hero2 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: url(images/destination/background-destination-tablet.jpg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
-    min-height: 1024px;
   }
 
   .hero3 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 0;
     background: url(images/crew/background-crew-tablet.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
   }
 
   .hero4 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: url(images/technology/background-technology-tablet.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
   }
 
   .mobNav {
@@ -792,10 +779,11 @@ main .explore:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: 22px 0 0 30px;
   }
 
   .logo {
-    padding: 24px 30px;
+    margin: 24px 30px;
   }
 
   .mobNav {
@@ -1085,11 +1073,12 @@ main .explore:hover {
   }
 
   .destination_main .geo {
-    width: 573px;
+    width: 100%;
+    max-width: 573px;
     margin: auto;
     border-top: 0.2px solid var(--span);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
     padding: 20px;
   }
@@ -1154,6 +1143,7 @@ main .explore:hover {
     align-items: center;
     gap: 32px;
     text-align: center;
+    min-height: 100%;
   }
 
   .desktop_crew_main h2 {
@@ -1174,6 +1164,11 @@ main .explore:hover {
     padding-right: 10px;
     font-size: 20px;
     font-family: "Barlow Condensed", sans-serif;
+  }
+
+  .desktop_crew_main .crew {
+    width: 456.37px;
+    height: 572px;
   }
 
   .desktop_crew_main .crew-image {
@@ -1213,7 +1208,7 @@ main .explore:hover {
     justify-content: space-between;
     align-items: center;
     gap: 32px;
-    margin: auto;
+    /* margin: auto; */
   }
 
   .desktop_crew_main .crew-tabs .crew-tab {
@@ -1426,47 +1421,43 @@ main .explore:hover {
 
 /* small laptops and desktops media query*/
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .hero {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url(images/home/background-home-desktop.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
-    min-height: 900px;
+    /* min-height: 900px; */
   }
 
   .hero2 {
-    height: 100vh;
+    min-height: 100vh;
     background: url(images/destination/background-destination-desktop.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
     position: relative;
   }
 
   .hero3 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 0;
     background: url(images/crew/background-crew-desktop.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
   }
 
   .hero4 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: url(images/technology/background-technology-desktop.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
   }
 
   .mobNav {
@@ -1480,6 +1471,7 @@ main .explore:hover {
     position: relative;
     margin-top: 40px;
     margin-left: 55px;
+    padding: 22px 0 0 30px;
   }
 
   /* .logo{
@@ -1514,7 +1506,7 @@ main .explore:hover {
     );
     backdrop-filter: blur(16px) saturate(80%);
     -webkit-backdrop-filter: blur(16px) saturate(80%);
-    padding: 0 20px;
+    padding: 0 0 0 20px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1580,10 +1572,10 @@ main .explore:hover {
   }
 
   main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    padding: 0 85px;
   }
 
   main .text {
@@ -1635,6 +1627,7 @@ main .explore:hover {
     border-radius: 50%;
     color: #000;
     font-size: 24px;
+    margin: auto;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-family: "Bellefair", serif;
@@ -1647,11 +1640,10 @@ main .explore:hover {
 
   .destination_main {
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    padding: 130px 43px 0 60px;
+    padding: 70px 43px 0 60px;
     margin: auto;
     position: relative;
   }
@@ -1718,12 +1710,13 @@ main .explore:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    width: 445px;
+    width: 100%;
+    max-width: 285.5px;
     height: 302px;
   }
 
   .destination_main .tabs {
-    width: 285.5px;
+    width: 100%;
     height: 28px;
     position: relative;
   }
@@ -1756,6 +1749,7 @@ main .explore:hover {
 
   .active[data-tab-content] {
     display: block;
+    margin: auto;
     animation: reveal 0.8s linear 1;
   }
 
@@ -1802,6 +1796,7 @@ main .explore:hover {
     color: var(--GrayishBlue);
     font-weight: 300;
     line-height: 25px;
+    text-align: left;
     margin: -10px auto 20px auto;
   }
 
@@ -1811,7 +1806,7 @@ main .explore:hover {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 79px;
+    gap: 3rem;
     padding: 10px 0;
   }
 
@@ -1863,13 +1858,15 @@ main .explore:hover {
   }
 
   .desktop_crew_main {
-    display: flex;
+    display: grid;
     position: relative;
-    justify-content: flex-start;
-    align-items: flex-end;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
     gap: 32px;
     text-align: center;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 0;
+    /* height: 100vh; */
   }
 
   .desktop_crew_main h2 {
@@ -1878,8 +1875,9 @@ main .explore:hover {
     color: var(--white);
     font-size: 20px;
     font-weight: 400;
-    padding-top: 40px;
-    padding-left: 46px;
+    top: 40px;
+    padding-left: 0;
+    left: 9%;
     letter-spacing: 3.38px;
     align-self: flex-start;
     position: absolute;
@@ -1895,8 +1893,8 @@ main .explore:hover {
 
   .desktop_crew_main .crew-image {
     width: 456.37px;
-    position: absolute;
-    bottom: -90px;
+    position: relative;
+    bottom: 0px;
     right: 46px;
   }
 
@@ -1916,7 +1914,7 @@ main .explore:hover {
   @keyframes swipe2 {
     0% {
       opacity: 0;
-      transform: translateX(200px);
+      /* transform: translateX(200px); */
     }
 
     100% {
@@ -1928,10 +1926,11 @@ main .explore:hover {
   .desktop_crew_main .crew-tabs {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 32px;
-    padding-left: 46px;
+    padding-left: 11.6%;
+    height: 100%;
   }
 
   .desktop_crew_main .crew-tabs .crew-tab {
@@ -2011,16 +2010,16 @@ main .explore:hover {
     font-weight: 400;
     line-height: 32px;
     text-align: left;
+    margin: unset;
   }
 
   .desktop_tech_main {
-    display: flex;
+    display: grid;
     position: relative;
-    justify-content: space-between;
-    align-items: flex-end;
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     text-align: center;
-    padding-bottom: 60px;
+    padding-top: 100px;
   }
 
   .desktop_tech_main h2 {
@@ -2029,8 +2028,8 @@ main .explore:hover {
     color: var(--white);
     font-size: 20px;
     font-weight: 400;
-    padding-top: 40px;
-    padding-left: 46px;
+    top: 40px;
+    left: 9%;
     letter-spacing: 3.38px;
     align-self: flex-start;
     position: absolute;
@@ -2080,11 +2079,11 @@ main .explore:hover {
     justify-content: space-between;
     align-items: flex-start;
     gap: 32px;
-    padding-left: 46px;
+    /* padding-left: 46px; */
   }
 
   .desktop_tech_main .tech-tabs .tech-tab {
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -2125,12 +2124,12 @@ main .explore:hover {
 
   .desktop_tech_main .tech-info .info {
     width: 444px;
-    animation: reveal3 0.6s linear 1;
+    animation: reveal3 0.3s linear 1;
   }
 
   @keyframes reveal3 {
     0% {
-      transform: translateY(200px);
+      transform: translateY(20px);
       opacity: 0;
     }
 
@@ -2173,49 +2172,45 @@ main .explore:hover {
 
 /* desktop media query */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .hero {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url(images/home/background-home-desktop.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
   }
 
   .hero2 {
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
+    width: 100%;
     background: url(images/destination/background-destination-desktop.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
     position: relative;
-    min-height: 900px;
   }
 
   .hero3 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 0;
     background: url(images/crew/background-crew-desktop.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
-    min-height: 900px;
   }
 
   .hero4 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: url(images/technology/background-technology-desktop.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
-    min-height: 900px;
   }
 
   .mobNav {
@@ -2227,10 +2222,11 @@ main .explore:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: 22px 0 0 30px;
   }
 
   .logo {
-    padding: 64px 0 0 56px;
+    margin: 64px 0 0 56px;
   }
 
   .mobNav {
@@ -2333,10 +2329,11 @@ main .explore:hover {
 
   main {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 50px;
-    height: 80%;
+    /* min-height: 100vh; */
   }
 
   main .text {
@@ -2402,12 +2399,14 @@ main .explore:hover {
   .destination_main {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
     margin: auto;
     position: relative;
+    padding-top: 80px;
+    /* height: 100%; */
   }
 
   .destination_main h2 {
@@ -2472,12 +2471,12 @@ main .explore:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    width: 445px;
+    width: 285.5px;
+
     height: 472px;
   }
 
   .destination_main .tabs {
-    width: 285.5px;
     height: 34px;
     position: relative;
   }
@@ -2557,6 +2556,7 @@ main .explore:hover {
     font-weight: 300;
     line-height: 32px;
     margin: 20px auto;
+    text-align: left;
   }
 
   .destination_main .geo {
@@ -2565,7 +2565,7 @@ main .explore:hover {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 70px;
+    gap: 3rem;
     padding: 20px 0;
   }
 
@@ -2621,10 +2621,11 @@ main .explore:hover {
     display: flex;
     position: relative;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     gap: 32px;
     text-align: center;
-    padding-bottom: 94px;
+    padding-top: 100px;
+    padding-bottom: 0;
   }
 
   .desktop_crew_main h2 {
@@ -2633,8 +2634,8 @@ main .explore:hover {
     color: var(--white);
     font-size: 28px;
     font-weight: 400;
-    padding-top: 40px;
-    padding-left: 166.5px;
+    /* padding-top: 40px; */
+    left: 7%;
     letter-spacing: 4.27px;
     align-self: flex-start;
     position: absolute;
@@ -2649,8 +2650,8 @@ main .explore:hover {
   }
 
   .desktop_crew_main .crew-image {
-    position: absolute;
-    bottom: -90px;
+    position: relative;
+    bottom: 0px;
     right: 29px;
   }
 
@@ -2682,10 +2683,10 @@ main .explore:hover {
   .desktop_crew_main .crew-tabs {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 120px;
-    padding-left: 166px;
+    gap: 3rem;
+    padding: 0 0 0 7%;
   }
 
   .desktop_crew_main .crew-tabs .crew-tab {
@@ -2767,15 +2768,16 @@ main .explore:hover {
     line-height: 32px;
     text-align: left;
     width: 444px;
+    margin: unset;
   }
 
   .desktop_tech_main {
-    display: flex;
+    display: grid;
     position: relative;
-    justify-content: flex-start;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 0;
   }
 
   .desktop_tech_main h2 {
@@ -2785,7 +2787,7 @@ main .explore:hover {
     font-size: 28px;
     font-weight: 400;
     padding-top: 40px;
-    padding-left: 166px;
+    left: 7%;
     letter-spacing: 3.38px;
     align-self: flex-start;
     position: absolute;
@@ -2834,7 +2836,7 @@ main .explore:hover {
     justify-content: flex-start;
     align-items: center;
     gap: 80px;
-    padding-left: 165px;
+    padding-left: 10%;
     width: 100%;
   }
 

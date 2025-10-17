@@ -19,7 +19,7 @@
 
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: #000;
 }
 
@@ -779,11 +779,11 @@ main .explore:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 22px 0 0 30px;
+    padding: 0 0 0 30px;
   }
 
   .logo {
-    margin: 24px 30px;
+    /* margin: 24px 30px; */
   }
 
   .mobNav {
@@ -1438,7 +1438,7 @@ main .explore:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
   }
 
   .hero3 {
@@ -1470,7 +1470,6 @@ main .explore:hover {
     align-items: center;
     position: relative;
     margin-top: 40px;
-    margin-left: 55px;
     padding: 22px 0 0 30px;
   }
 
@@ -2222,11 +2221,11 @@ main .explore:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 22px 0 0 30px;
+    padding: 0 0 0 30px;
   }
 
   .logo {
-    margin: 64px 0 0 56px;
+    /* margin: 64px 0 0 56px; */
   }
 
   .mobNav {
@@ -2419,7 +2418,7 @@ main .explore:hover {
     letter-spacing: 0.1em;
     position: absolute;
     top: 60px;
-    left: 166.5px;
+    left: 9%;
   }
 
   .destination_main h2 span {
@@ -2471,14 +2470,16 @@ main .explore:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    width: 285.5px;
-
+    width: 100%;
     height: 472px;
   }
 
   .destination_main .tabs {
+    width: 285.5px;
     height: 34px;
     position: relative;
+    margin: unset;
+    justify-self: flex-start;
   }
 
   .destination_main .tabs ul {
@@ -2557,16 +2558,19 @@ main .explore:hover {
     line-height: 32px;
     margin: 20px auto;
     text-align: left;
+    width: 100%;
+    max-width: 500px;
   }
 
   .destination_main .geo {
-    margin: auto;
     border-top: 0.2px solid var(--span);
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 3rem;
+    gap: 2rem;
     padding: 20px 0;
+    margin: unset;
+    margin-right: auto;
   }
 
   .destination_main .geo .distance {

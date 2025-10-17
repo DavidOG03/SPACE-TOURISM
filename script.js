@@ -30,14 +30,14 @@ tabs.forEach(tab => {
     tab.addEventListener("click", (e) => {
         tabs.forEach(tab => {
             tab.classList.remove("active");
-            })
+        })
         tab.classList.add("active");
-        const select = document.querySelector(tab.dataset.tabTarget);
+        const selectTab = document.querySelector(tab.dataset.tabTarget);
         tabContents.forEach(tabContent => {
             tabContent.classList.remove("active")
         });
-        select.classList.add("active")
-        
+        selectTab.classList.add("active")
+
         //For line width to adapt to each link's width
         line.style.width = e.target.offsetWidth + "px";
         line.style.left = e.target.offsetLeft + "px";
@@ -46,11 +46,11 @@ tabs.forEach(tab => {
 
 imagesTab.forEach(image => {
     image.addEventListener("click", (e) => {
-        const select2 = document.querySelector(image.dataset.imageTarget);
-        images.forEach(imagge => {
-            imagge.classList.remove("active")
+        const selectImage = document.querySelector(image.dataset.imageTarget);
+        images.forEach(image => {
+            image.classList.remove("active")
         });
-        select2.classList.add("active") 
+        selectImage.classList.add("active")
     })
 })
 

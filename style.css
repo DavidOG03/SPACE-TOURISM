@@ -1505,14 +1505,14 @@ main .explore:hover {
     );
     backdrop-filter: blur(16px) saturate(80%);
     -webkit-backdrop-filter: blur(16px) saturate(80%);
-    padding: 0 0 0 20px;
+    padding: 1.5rem 0 1.5rem 20px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px 0 0 50px;
     width: 650px;
-    height: 96px;
+    height: auto;
   }
 
   .desktopNav .connect {
@@ -1534,7 +1534,7 @@ main .explore:hover {
   }
 
   .desktopNav ul .link2.active a {
-    padding: 37px 0;
+    padding: 1.45rem 0;
     border-bottom: 2px solid var(--white);
   }
 
@@ -1545,7 +1545,7 @@ main .explore:hover {
     font-size: 14px;
     letter-spacing: 2.36px;
     font-family: "Barlow Condensed", sans-serif;
-    padding: 39px 0;
+    padding: 1.4rem 0;
   }
 
   .desktopNav ul li a strong {
@@ -1558,7 +1558,7 @@ main .explore:hover {
 
   .desktopNav ul .link2:hover a {
     cursor: pointer;
-    padding: 37px 0;
+    padding: 1.4rem 0;
     border-bottom: 2px solid var(--transparent-white);
   }
 
@@ -2263,7 +2263,8 @@ main .explore:hover {
     align-items: center;
     border-radius: 50px 0 0 50px;
     width: 830px;
-    height: 96px;
+    padding: 1.5rem 0 1.5rem 20px;
+    height: auto;
   }
 
   .desktopNav .connect {
@@ -2290,7 +2291,7 @@ main .explore:hover {
   }
 
   .desktopNav ul .link2.active a {
-    padding: 34px 0;
+    padding: 1.4rem 0;
     border-bottom: 2px solid var(--white);
   }
 
@@ -2300,7 +2301,7 @@ main .explore:hover {
     text-transform: uppercase;
     font-size: 16px;
     font-family: "Barlow Condensed", sans-serif;
-    padding: 36px 0;
+    padding: 1.4rem 0;
     letter-spacing: 2.7px;
   }
 
@@ -2314,7 +2315,7 @@ main .explore:hover {
 
   .desktopNav ul li:hover a {
     cursor: pointer;
-    padding: 34px 0;
+    padding: 1.4rem 0;
     border-bottom: 2px solid var(--transparent-white);
   }
 
